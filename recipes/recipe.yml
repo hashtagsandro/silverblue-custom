@@ -24,14 +24,15 @@ modules:
         - scottames/ghostty
     install:
       packages:
-        - starship
-        - ghosty
         - zsh
-        - rclone
+        - stow
         - curl
+        - rclone
         - nmap
         - dig
         - mc
+        - starship
+        - ghosty
         - libvirt
         - virt-manager
         - qemu-kvm
