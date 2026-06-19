@@ -1,13 +1,11 @@
 ---
 # yaml-language-server: $schema=https://schema.blue-build.org/recipe-v1.json
-# image will be published to ghcr.io/<user>/<name>
+
 name: silverblue-custom
-# description will be included in the image's metadata
 description: This is my personal OS image.
 
-# the base image to build on top of (FROM) and the version tag to use
 base-image: ghcr.io/ublue-os/silverblue-main
-image-version: 44 # latest is also supported if you want new updates ASAP
+image-version: 44
 
 modules:
 
@@ -16,6 +14,7 @@ modules:
       - source: system
         destination: /
 
+  ### SOME PACKAGES ARE ALREADY PRESENT BUT I PREFER TO FORCE IT ###
   - type: dnf
     install:
       packages:
@@ -50,7 +49,7 @@ modules:
         install:
           # Browser
           - org.mozilla.firefox
-          - org.chromium.Chromium      
+          - org.chromium.Chromium
           # Remote Sessions
           - org.remmina.Remmina
           # Editor
@@ -73,7 +72,12 @@ modules:
           - com.bitwarden.desktop
           # Archive
           - org.gnome.FileRoller
-
+          # Clock
+          - org.gnome.Clocks
+          # Disk Usage
+          - org.gnome.baobab
+          # Resources
+          - net.nokyan.Resources
   - type: script
     scripts:
       - customize.sh
