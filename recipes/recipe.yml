@@ -39,12 +39,24 @@ modules:
   - type: default-flatpaks
     configurations:
       - notify: true
-      #  scope: system
         scope: user
         install:
+          # Browser
           - org.mozilla.firefox
           - org.chromium.Chromium      
-  
+          # Remote Sessions
+          - flathub org.remmina.Remmina
+          # Editor
+          - com.visualstudio.code
+          # Notes
+          - net.cozic.joplin_desktop
+          # Office Suite
+          - org.libreoffice.LibreOffice
+          # Calculator
+          - org.gnome.Calculator
+          # Multimedia
+          - org.videolan.VLC
+          
   - type: systemd
     system:
       enabled:
