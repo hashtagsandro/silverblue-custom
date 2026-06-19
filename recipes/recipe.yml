@@ -45,7 +45,7 @@ modules:
           - org.mozilla.firefox
           - org.chromium.Chromium      
           # Remote Sessions
-          - flathub org.remmina.Remmina
+          - org.remmina.Remmina
           # Editor
           - com.visualstudio.code
           # Notes
@@ -56,7 +56,7 @@ modules:
           - org.gnome.Calculator
           # Multimedia
           - org.videolan.VLC
-          
+
   - type: systemd
     system:
       enabled:
