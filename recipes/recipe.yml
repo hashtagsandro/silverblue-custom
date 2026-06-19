@@ -46,6 +46,6 @@ modules:
 
   - type: script
     scripts:
-      - script.sh
+      - podman.sh
 
   - type: signing
