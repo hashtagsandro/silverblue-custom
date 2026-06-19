@@ -15,6 +15,7 @@ modules:
         destination: /
 
   ### SOME PACKAGES ARE ALREADY PRESENT BUT I PREFER TO FORCE IT ###
+  
   - type: dnf
     install:
       packages:
@@ -78,6 +79,7 @@ modules:
           - org.gnome.baobab
           # Resources
           - net.nokyan.Resources
+
   - type: script
     scripts:
       - customize.sh
