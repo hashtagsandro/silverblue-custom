@@ -32,6 +32,10 @@ modules:
         - wireguard-tools
         - jq
         - yq
+        - p7zip
+        - p7zip-plugins
+        - rar
+        - unrar
     remove:
       packages:
         - firefox
@@ -53,6 +57,8 @@ modules:
           - com.visualstudio.code
           # Notes
           - net.cozic.joplin_desktop
+          # PDF
+          - org.gnome.Evince
           # Office Suite
           - org.libreoffice.LibreOffice
           # Calculator
@@ -65,6 +71,8 @@ modules:
           - org.gnome.World.PikaBackup
           # Vault
           - com.bitwarden.desktop
+          # Archive
+          - org.gnome.FileRoller
 
   - type: script
     scripts:
