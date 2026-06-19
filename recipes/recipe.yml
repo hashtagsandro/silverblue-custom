@@ -30,7 +30,6 @@ modules:
         - virt-manager
         - qemu-kvm
         - wireguard-tools
-        - linux_f5cli.x86_64.rpm
     remove:
       packages:
         - firefox
