@@ -21,7 +21,6 @@ modules:
     repos:
       copr:
         - atim/starship
-        - scottames/ghostty
     install:
       packages:
         - zsh
@@ -31,11 +30,10 @@ modules:
         - nmap
         - dig
         - mc
-        - starship
-        - ghostty
         - libvirt
         - virt-manager
         - qemu-kvm
+        - starship
     remove:
       packages:
         - firefox
@@ -49,13 +47,13 @@ modules:
         install:
           - org.mozilla.firefox
           - org.chromium.Chromium
-          - org.gnome.World.PikaBackup
-          - com.bitwarden.desktop
-          - org.remmina.Remmina
-          - com.github.IsmaelMartinez.teams_for_linux
-          - net.cozic.joplin_desktop
-          - io.github.pwr_solaar.solaar
-          - org.videolan.VLC
+        #  - org.gnome.World.PikaBackup
+        #  - com.bitwarden.desktop
+        #  - org.remmina.Remmina
+        #  - com.github.IsmaelMartinez.teams_for_linux
+        #  - net.cozic.joplin_desktop
+        #  - io.github.pwr_solaar.solaar
+        #  - org.videolan.VLC
       - scope: user
 
-  - type: signing # this sets up the proper policy & signing files for signed images to work fully
+  - type: signing
