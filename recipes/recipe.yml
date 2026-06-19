@@ -18,9 +18,6 @@ modules:
         destination: / # copies files/system/* (* means everything inside it) into your image's root folder /
 
   - type: dnf
-    repos:
-      copr:
-        - atim/starship
     install:
       packages:
         - zsh
@@ -33,7 +30,6 @@ modules:
         - libvirt
         - virt-manager
         - qemu-kvm
-        - starship
     remove:
       packages:
         - firefox
@@ -47,13 +43,6 @@ modules:
         install:
           - org.mozilla.firefox
           - org.chromium.Chromium
-        #  - org.gnome.World.PikaBackup
-        #  - com.bitwarden.desktop
-        #  - org.remmina.Remmina
-        #  - com.github.IsmaelMartinez.teams_for_linux
-        #  - net.cozic.joplin_desktop
-        #  - io.github.pwr_solaar.solaar
-        #  - org.videolan.VLC
       - scope: user
 
   - type: signing
