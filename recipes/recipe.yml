@@ -32,7 +32,7 @@ modules:
         - dig
         - mc
         - starship
-        - ghosty
+        - ghostty
         - libvirt
         - virt-manager
         - qemu-kvm
