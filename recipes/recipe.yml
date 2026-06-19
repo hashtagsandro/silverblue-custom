@@ -35,6 +35,7 @@ modules:
         - firefox-langpacks
         - nvtop
         - htop
+
   - type: default-flatpaks
     configurations:
       - notify: true
@@ -43,9 +44,10 @@ modules:
         install:
           - org.mozilla.firefox
           - org.chromium.Chromium      
-
-  - type: script
-    scripts:
-      - podman.sh
+  
+  - type: systemd
+    system:
+      enabled:
+        - podman
 
   - type: signing
