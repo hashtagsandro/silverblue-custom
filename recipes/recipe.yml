@@ -15,8 +15,7 @@ modules:
   - type: files
     files:
       - source: system
-        destination: / # copies files/system/* (* means everything inside it) into your image's root folder /
-
+        destination: /
   - type: dnf
     install:
       packages:
@@ -44,5 +43,9 @@ modules:
         install:
           - org.mozilla.firefox
           - org.chromium.Chromium      
+
+  - type: script
+    scripts:
+    - script.sh
 
   - type: signing
