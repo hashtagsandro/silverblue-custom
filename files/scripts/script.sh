@@ -7,4 +7,4 @@ set -oue pipefail
 
 # Your code goes here.
 echo 'Enable docker service'
-systemctl enable docker
+ln -s /etc/systemd/system/default.target.wants/podman.service /usr/lib/systemd/system/podman.service
