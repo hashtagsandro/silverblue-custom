@@ -30,6 +30,8 @@ modules:
         - virt-manager
         - qemu-kvm
         - wireguard-tools
+        - jq
+        - yq
     remove:
       packages:
         - firefox
@@ -61,6 +63,8 @@ modules:
           - com.github.IsmaelMartinez.teams_for_linux
           # Backup
           - org.gnome.World.PikaBackup
+          # Vault
+          - com.bitwarden.desktop
 
   - type: script
     scripts:
@@ -70,5 +74,19 @@ modules:
     system:
       enabled:
         - podman
-
+  
+  - type: fonts
+    fonts:
+      nerd-fonts:
+        - FiraCode
+        - JetBrainsMono
+        - Hack
+        - SourceCodePro
+        - Terminus
+        - NerdFontsSymbolsOnly
+      google-fonts:
+        - Roboto
+        - Open Sans
+        - Inter
+  
   - type: signing
