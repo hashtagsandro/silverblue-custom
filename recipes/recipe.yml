@@ -48,6 +48,7 @@ modules:
         scope: system
         install:
           - org.mozilla.firefox
+          - org.chromium.Chromium
           - org.remmina.Remmina
           - org.gnome.World.PikaBackup
           - org.videolan.VLC
