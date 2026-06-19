@@ -73,7 +73,7 @@ modules:
           # Archive
           - org.gnome.FileRoller
           # Clock
-          - org.gnome.Clocks
+          - org.gnome.clocks
           # Disk Usage
           - org.gnome.baobab
           # Resources
