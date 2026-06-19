@@ -39,10 +39,10 @@ modules:
   - type: default-flatpaks
     configurations:
       - notify: true
-        scope: system
+      #  scope: system
+        scope: user
         install:
           - org.mozilla.firefox
-          - org.chromium.Chromium
-      - scope: user
+          - org.chromium.Chromium      
 
   - type: signing
