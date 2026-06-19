@@ -60,10 +60,10 @@ modules:
           # Calls
           - com.github.IsmaelMartinez.teams_for_linux
 
-  - type: scripts
+  - type: script
     scripts:
       - customize.sh
-      
+
   - type: systemd
     system:
       enabled:
