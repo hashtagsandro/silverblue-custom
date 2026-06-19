@@ -9,13 +9,13 @@ description: This is my personal OS image.
 base-image: ghcr.io/ublue-os/silverblue-main
 image-version: 44 # latest is also supported if you want new updates ASAP
 
-# module configuration, executed in order
-# you can include multiple instances of the same module
 modules:
+
   - type: files
     files:
       - source: system
         destination: /
+
   - type: dnf
     install:
       packages:
@@ -29,6 +29,8 @@ modules:
         - libvirt
         - virt-manager
         - qemu-kvm
+        - wireguard-tools
+        - linux_f5cli.x86_64.rpm
     remove:
       packages:
         - firefox
