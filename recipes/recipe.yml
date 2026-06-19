@@ -59,6 +59,8 @@ modules:
           - org.videolan.VLC
           # Calls
           - com.github.IsmaelMartinez.teams_for_linux
+          # Backup
+          - org.gnome.World.PikaBackup
 
   - type: script
     scripts:
