@@ -26,6 +26,7 @@ modules:
         - nmap
         - dig
         - mc
+        - dos2unix
         - libvirt
         - virt-manager
         - qemu-kvm
